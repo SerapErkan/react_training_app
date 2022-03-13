@@ -1,2 +1,2 @@
 # React
-Hooks - Formik ile Form Yönetimi - Memoization - Context API  -DataFetching
+Hooks - Formik - Memoization - Context API  -DataFetching
