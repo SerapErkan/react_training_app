@@ -1,14 +1,14 @@
-import {useContext} from 'react'//usecontext tanımı 
-import ThemeContext from "../context/ThemeContext" //KULLANMAK İSTEDİGİMİZ YERİN(CONTEXT)  İMPORTU
-
+// import {useContext} from 'react'//usecontext tanımı 
+// import ThemeContext from "../context/ThemeContext" //KULLANMAK İSTEDİGİMİZ YERİN(CONTEXT)  İMPORTU
+import {useTheme} from "../context/ThemeContext"
 
 
 
 function Button() {
 
 
- const {theme,setTheme}=useContext(ThemeContext); // PARAMETRE OLARAK THEME CONTEXT GEÇTİK 
-   
+ //const {theme,setTheme}=useContext(ThemeContext); // PARAMETRE OLARAK THEME CONTEXT GEÇTİK 
+   const {theme,setTheme}=useTheme();
   return (
 
     <div>Button components
