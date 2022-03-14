@@ -7,15 +7,16 @@ import ThemeContext from "../context/ThemeContext" //KULLANMAK İSTEDİGİMİZ Y
 function Button() {
 
 
-    const data=useContext(ThemeContext); // PARAMETRE OLARAK THEME CONTEXT GEÇTİK 
-    console.log(data);
-
-
-
+ const {theme,setTheme}=useContext(ThemeContext); // PARAMETRE OLARAK THEME CONTEXT GEÇTİK 
+   
   return (
 
+    <div>Button components
+      <h3>Active Theme:{theme}</h3>
 
-    <div>Button components --{data}</div>
+      <button onClick={()=>setTheme(theme==="Dark"?"Red":"Dark")}>Change Theme </button>
+
+       </div>
   )
 }
 
