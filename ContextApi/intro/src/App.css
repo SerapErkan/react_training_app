@@ -1,0 +1,11 @@
+.app.Dark {
+  background-color: black;
+  color: aliceblue;
+  height: 50vh;
+}
+
+.app.Red {
+  background-color: red;
+  color: aliceblue;
+  height: 50vh;
+}
