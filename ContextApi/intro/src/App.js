@@ -1,16 +1,21 @@
 
 import './App.css';
 import Button from './components/Button';
-import ThemeContext from './context/ThemeContext';
+// import ThemeContext from './context/ThemeContext';
+import { ThemeProvider } from './context/ThemeContext';
 
 function App() {
   return (
     <div className="App">
      <h1>App components </h1>
      
-<ThemeContext.Provider value="dark">
+{/* <ThemeContext.Provider value="dark">
  <Button/>
-</ThemeContext.Provider>
+</ThemeContext.Provider> */}
+
+<ThemeProvider>
+  <Button/>
+</ThemeProvider>
 
 
     </div>
